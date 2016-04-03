@@ -31,3 +31,24 @@
         font-size: 24px;
         color: #E3153C !important;
         margin-top: 10px; }
+
+#gallery {
+  height: 400px;
+  background-color: #00A6ED;
+  display: flex;
+  z-index: 10;
+  position: relative;
+  align-items: center; }
+  #gallery .container {
+    width: 950px;
+    height: 300px;
+    position: relative;
+    left: 260px; }
+    #gallery .container .cards {
+      display: inline-block;
+      height: 200px;
+      width: 250px;
+      background-color: #fff;
+      float: left;
+      margin-right: 20px;
+      border-radius: 3px; }
