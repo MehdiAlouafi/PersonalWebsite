@@ -32,32 +32,70 @@
         color: #E3153C !important;
         margin-top: 10px; }
 
-#gallery {
-  height: 400px;
-  background-color: #00A6ED;
-  display: flex;
-  z-index: 10;
-  position: relative;
-  align-items: center; }
-  #gallery .container {
-    width: 950px;
-    height: 300px;
-    position: relative;
-    left: 260px; }
-    #gallery .container .cards {
-      display: inline-block;
-      height: 200px;
-      width: 250px;
-      background-color: #fff;
-      float: left;
-      margin-right: 20px;
-      border-radius: 3px; }
-
-.hamburger-menu * {
-  transition: transform 0.3s ease-in-out; }
+.hamburger-menu {
+  z-index: 9999; }
+  .hamburger-menu .bar3, .hamburger-menu .bar1 {
+    transition: transform 0.3s 0s, opacity 0.3s ease; }
+  .hamburger-menu .bar2::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: black;
+    transition: transform 0.3s ease;
+    border-radius: 5px; }
+  .hamburger-menu .bar2::before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: black;
+    transition: transform 0.3s ease;
+    border-radius: 5px; }
 
 .hamburger-menu.open .bar1 {
-  transform: translateY(8px); }
+  position: relative;
+  transform: translateY(8px);
+  opacity: 0; }
 
 .hamburger-menu.open .bar3 {
-  transform: translateY(-8px); }
+  transform: translateY(-8px);
+  opacity: 0; }
+
+.hamburger-menu.open .bar2 {
+  background-color: transparent; }
+  .hamburger-menu.open .bar2::after {
+    transform: rotate(45deg);
+    background-color: #fff;
+    transition-delay: 0.3s; }
+  .hamburger-menu.open .bar2::before {
+    transform: rotate(-45deg);
+    background-color: #fff;
+    transition-delay: 0.3s; }
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ff5f2e;
+  z-index: 8888;
+  transform: translateX(-100%);
+  transition: transform 0.5s cubic-bezier(0.82, 0.01, 0.77, 0.78); }
+  .menu.is_open {
+    transform: translateX(0); }
+  .menu li {
+    display: block;
+    margin-top: 25px;
+    font-size: 36px;
+    text-align: center; }
+    .menu li a {
+      color: #fff;
+      display: inline-block;
+      padding: 15px 25px; }
