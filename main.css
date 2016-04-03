@@ -52,3 +52,12 @@
       float: left;
       margin-right: 20px;
       border-radius: 3px; }
+
+.hamburger-menu * {
+  transition: transform 0.3s ease-in-out; }
+
+.hamburger-menu.open .bar1 {
+  transform: translateY(8px); }
+
+.hamburger-menu.open .bar3 {
+  transform: translateY(-8px); }
