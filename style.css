@@ -1,0 +1,90 @@
+html {
+  font-family: Helvetica, sans-serif;
+}
+*{
+  box-sizing: border-box;
+
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 450px;
+  color: #000;
+
+}
+.hamburger-menu {
+  position: fixed;
+  top: 30px;
+  right: 50px;
+  cursor: pointer;
+  z-index: 9999
+
+}
+.bars {
+  display:block;
+  height: 5px;
+  width: 35px;
+  background-color: black;
+  margin-top: 4px;
+
+}
+
+.kicker {
+  /*transform: translateX(300px) translateY(70px);*/
+  position: absolute;
+  left: 260px;
+  top: 80px;
+}
+#contact {
+  float: right;
+}
+#contact a {
+  float: right;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  margin: 0;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease, color 0.3s ease;
+}
+
+#contact a:hover {
+  border-color: #2EC4B6;
+  color: #2EC4B6;
+  transform: translateY(-3px);
+}
+
+.kicker p {
+  max-width: 750px;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+.social-links ul li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 10px;
+}
+
+.social-links a {
+  color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  display: inline-block;
+}
+.social-links ul li:first-child a {
+  padding-left: 0;
+}
+
+.social-links a:hover {
+color: black;
+}

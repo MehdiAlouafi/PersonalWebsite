@@ -1,0 +1,33 @@
+#skills {
+  margin-top: 480px;
+  height: 400px;
+  background-color: #fff;
+  position: relative;
+  z-index: 10; }
+  #skills .section-title, #skills .skill-set {
+    float: left;
+    width: 50%;
+    height: 100%; }
+  #skills .section-title {
+    font-family: 'Varela Round', Helvetica !important;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #skills .section-title h2::after {
+      content: ' ';
+      display: block;
+      height: 3px;
+      width: 100%;
+      background-color: #E3153C;
+      border-radius: 35px; }
+  #skills .skill-set {
+    display: flex;
+    align-items: center; }
+    #skills .skill-set ul {
+      list-style: none; }
+      #skills .skill-set ul li {
+        font-size: 18px; }
+      #skills .skill-set ul .cat-name {
+        font-size: 24px;
+        color: #E3153C !important;
+        margin-top: 10px; }
