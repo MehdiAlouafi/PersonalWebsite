@@ -1,9 +1,11 @@
 
 $(function(){
    $('.hamburger-menu').click(function(){
+     $('.overlay').toggleClass('is_active');
      $(this).toggleClass('open');
      $('.menu').toggleClass('is_open');
    });
+
    $('.menu_items').click(function(){
      $('.menu_items').not(this).removeClass('is_current');
      $(this).toggleClass('is_current');
