@@ -145,9 +145,11 @@
 #profesional {
   position: relative;
   z-index: 10;
-  background-color: #fff; }
+  background-color: #fff;
+  padding-top: 10px; }
   #profesional h2 {
-    text-align: center; }
+    text-align: center;
+    margin-top: 0; }
   #profesional ul {
     margin: 0;
     padding: 0;
@@ -165,3 +167,5 @@
         position: relative;
         height: 100%;
         background-color: #ccc; }
+      #profesional ul li:first-of-type .card-pro {
+        float: left; }
