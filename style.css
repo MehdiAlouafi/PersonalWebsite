@@ -1,5 +1,11 @@
 /*grille principal width*/
 /*width: 730px;*/
+body {
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
 
 html {
   font-family: Helvetica, sans-serif;

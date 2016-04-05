@@ -37,12 +37,15 @@
 #skills {
   margin-top: 480px;
   height: 400px;
-  background-color: #fff;
+  background-color: #2D2D2D;
   position: relative;
-  z-index: 10; }
+  z-index: 10;
+  color: #fff; }
   #skills .container {
     max-width: 900px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    overflow: auto;
+    height: 354px; }
   #skills .section-title, #skills .skill-set {
     float: left;
     width: 50%;
@@ -51,7 +54,8 @@
     font-family: 'Varela Round', Helvetica !important;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    height: 100%; }
     #skills .section-title h2::after {
       content: ' ';
       display: block;
@@ -142,30 +146,77 @@
       .menu li a.is_current {
         color: #fff; }
 
-#profesional {
+#timeline {
   position: relative;
-  z-index: 10;
-  background-color: #fff;
-  padding-top: 10px; }
-  #profesional h2 {
-    text-align: center;
-    margin-top: 0; }
-  #profesional ul {
-    margin: 0;
-    padding: 0;
-    max-width: 730px;
-    margin: 0 auto;
-    list-style: none; }
-    #profesional ul li {
-      height: 350px;
-      width: 100%;
-      background-color: blue;
-      margin: 10px;
-      padding: 20px; }
-      #profesional ul li .card-pro {
-        width: 300px;
-        position: relative;
-        height: 100%;
-        background-color: #ccc; }
-      #profesional ul li:first-of-type .card-pro {
-        float: left; }
+  z-index: 10; }
+  #timeline .container {
+    width: 730px;
+    margin: 0 auto; }
+    #timeline .container h2 {
+      text-align: center;
+      font-family: 'Dosis';
+      background-color: #fff;
+      margin-top: -0.5px; }
+    #timeline .container ul {
+      list-style: none;
+      position: relative; }
+      #timeline .container ul::after {
+        content: ' ';
+        position: absolute;
+        height: 300px;
+        width: 2px;
+        background-color: #ccc;
+        top: 0;
+        left: 50%; }
+      #timeline .container ul .card-time {
+        width: 320px;
+        background-color: #2D2D2D;
+        padding: 10px;
+        position: relative; }
+        #timeline .container ul .card-time.card-right {
+          margin-top: 50px; }
+        #timeline .container ul .card-time.card-left {
+          margin-top: 50px; }
+        #timeline .container ul .card-time.card-last {
+          margin-top: 75px;
+          width: 100%;
+          text-align: center;
+          background-color: #E3153C;
+          color: #fff;
+          height: 150px; }
+        #timeline .container ul .card-time .rounded {
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+          background-color: #2D2D2D;
+          position: absolute;
+          z-index: 10;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          #timeline .container ul .card-time .rounded.first {
+            top: 0;
+            right: -70px; }
+          #timeline .container ul .card-time .rounded.second {
+            top: 0;
+            left: -70px; }
+          #timeline .container ul .card-time .rounded.lasty {
+            left: 46.5%;
+            top: -60px; }
+        #timeline .container ul .card-time.card-left {
+          text-align: right;
+          clear: right; }
+        #timeline .container ul .card-time.card-right {
+          float: right; }
+        #timeline .container ul .card-time h3 {
+          font-family: 'Dosis', sans-serif;
+          color: #fff;
+          font-weight: lighter;
+          margin: 0; }
+        #timeline .container ul .card-time p {
+          font-family: Helvetica;
+          font-style: italic;
+          font-weight: light;
+          font-size: 13px;
+          color: #fff;
+          margin: 5px 0 0 0; }
