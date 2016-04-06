@@ -18,10 +18,21 @@ $(function(){
 // ainsi avec window.onscroll, à chaque fois que l'utilisateur scroll je vérifie si tel élément est dans le viewport
 //Si oui je lance une action (ici un console.log)
 
-window.onscroll = function (e)
-{
-  if($('#test').visible()){
-    console.log('bonjour');
-  }
-}
+$(window).scroll(function(){
+  var wScroll = $(this).scrollTop();
+  $('.kicker').css({
+    'transform':' translate(0,'+wScroll / 30 +'%)'
+  });
+  $('.first-planet').css({
+    'transform': 'translate(0,'+ wScroll/10 + '%)'
+  });
+  $('.second-planet').css({
+    'transform': 'translate(0,'+ wScroll/3 + '%)'
+  });
+  $('.third-planet').css({
+    'transform': 'translate(0,'+ wScroll/40 + '%)'
+  });
+
+  });
+
 });
