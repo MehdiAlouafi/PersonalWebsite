@@ -26,4 +26,8 @@ $(window).scroll(function(){
 //
 //
 // })
+  $('.nav-responsiv-menu a').click(function(){
+    console.log('bonjour');
+    $(this).toggleClass('current_item');
+  });
 });
