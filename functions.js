@@ -7,6 +7,9 @@ $(function(){
 // ainsi avec window.onscroll, à chaque fois que l'utilisateur scroll je vérifie si tel élément est dans le viewport
 //Si oui je lance une action (ici un console.log)
 
+$('.menu_item').click(function(){
+  $(this).addClass('current_item').siblings().removeClass('current_item');
+});
 
 
 });
