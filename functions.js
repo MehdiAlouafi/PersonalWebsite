@@ -26,8 +26,10 @@ $(window).scroll(function(){
 //
 //
 // })
-  $('.nav-responsiv-menu a').click(function(){
-    console.log('bonjour');
-    $(this).toggleClass('current_item');
+
+//Faire une fonction qui, quand je clique, ferme le menu et ENSUITE scroll
+  $('.nav-responsiv-menu li').click(function(){
+    $(this).addClass('current_item-responsive').siblings().removeClass('current_item-responsive');
+    $('.nav-responsiv-menu').removeClass('is_open');
   });
 });
