@@ -12,5 +12,18 @@ $('.menu_item').click(function(){
 $('.nav-responsiv').click(function(){
   $('.nav-responsiv-menu').toggleClass('is_open')
 });
-
+$(window).scroll(function(){
+    var $scrollWindow = $(this).scrollTop();
+    if($scrollWindow > 1850){
+      $('nav').addClass('scroll-up');
+    } else {
+      $('nav').removeClass('scroll-up');
+    }
+  });
+// $('.verslInfiniEtAuDela a').click(function(){
+//   var $scrollWindow = $(window).scrollTop();
+//     $('a svg').addClass('on-scroll');
+//
+//
+// })
 });
