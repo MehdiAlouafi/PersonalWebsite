@@ -27,7 +27,7 @@ $(window).scroll(function(){
     console.log($scrollWindow);
     if($scrollWindow > 535 && $scrollWindow < 880){
       $(".right.nav_header a[href='#skills']").parent().addClass('current_item').siblings().removeClass('current_item')
-    } else if($scrollWindow > 1080 && $scrollWindow < 1900){
+    } else if($scrollWindow > 900 && $scrollWindow < 1900){
       $(".right.nav_header a[href='#projects']").parent().addClass('current_item').siblings().removeClass('current_item')
     } else if($scrollWindow > 1900){
       $(".right.nav_header a[href='#about']").parent().addClass('current_item').siblings().removeClass('current_item')
