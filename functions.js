@@ -19,6 +19,11 @@ $(window).scroll(function(){
     } else {
       $('nav').removeClass('scroll-up');
     }
+    if($scrollWindow>494){
+      $('nav').css({'box-shadow':'0 0 15px rgba(0,0,0,0.7)'})
+    } else {
+      $('nav').css({'box-shadow':'none'})
+    }
   });
 // $('.verslInfiniEtAuDela a').click(function(){
 //   var $scrollWindow = $(window).scrollTop();
